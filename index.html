@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Sprint | Portfolio</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src ="https://kit.fontawesome.com/2b23b47e23.js"></script>
 </head>
 <body>
-    
+    <nav>
+       <div class ="menu">
+            <div class = "logo">
+                <a href ="#">Ed Spurrell | Developer</a>
+                </div>
+                <ul>
+                    <li><a href ="/index.html">Home</a></li>
+                    <li><a href="https://www.linkedin.com/in/edwardspurrell/" target="_blank">About Me</a></li>
+                    <li><a href ="#">My Projects</a></li>
+                    <li><a href ="/rps.html">Let's Play!</a></li>
+                </ul>
+
+            </div>
+       </div>
+       <div class ="img"></div>
+       <div class ="center">
+            <div class ="text"> Hey there! I'm Ed and a developer just<br> starting out, with a passion for learning. <br><br>I am always looking for new projects to<br> work on and new people to meet.<br><br>Please feel free to reach out to me if<br> would like to work together.</div>
+
+            <div class = "btn">
+                <button class = "contact" onclick="openForm()">Let's Connect!</button>
+
+                    <div class="form-popup" id="myForm">
+
+                        <form action="https://formspree.io/f/mvoewvgp" method="POST" class="form-container">
+
+                          <h1>Let's Connect!</h1>
+                      
+                          <label for="email"><b>Email </b></label>
+                          <input type="text" placeholder="Enter Email" name="email" required>
+                      
+                          <label for="message"><b>Message</b></label>
+                          <input type="text" placeholder="Leave a Message" style="height: 200px" name="msg" required >
+                      
+                          <button type="submit" class="btn">Send!</button>
+                          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        </form>
+                      </div>
+            </div>
+
+        
+       </div>
+           
+           
+    </nav>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>
